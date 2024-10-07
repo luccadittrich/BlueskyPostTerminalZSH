@@ -1,6 +1,6 @@
 #!/bin/bash
 
-HANDLE='' #INSERT YOUR BLUESKY USERNAME LIKE THIS: harrypotter.bsky.social
+HANDLE='harrypotter.bsky.social' #INSERT YOUR BLUESKY USERNAME
 DID_URL="https://bsky.social/xrpc/com.atproto.identity.resolveHandle"
 export DID=$(curl -G -s \
     --data-urlencode "handle=$HANDLE" \
@@ -20,7 +20,7 @@ if [ ${#POST_TEXT} -gt 300 ]; then
 fi
 
 # Get an app password from here: https://staging.bsky.app/settings/app-passwords
-export APP_PASSWORD= # INSERT YOUR PASSOWORD
+export APP_PASSWORD=******* # INSERT YOUR PASSOWORD
 
 # Get API key with the app password
 API_KEY_URL='https://bsky.social/xrpc/com.atproto.server.createSession'
