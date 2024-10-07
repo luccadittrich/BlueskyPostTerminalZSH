@@ -8,7 +8,7 @@ use zsh or similar
 
 * 2 Change APP_PASSWORD and HANDLE
 
-* 3 Get an app password from here: https://staging.bsky.app/settings/app-passwords
+* 3 Get an app password from here: https://staging.bsky.app/settings/app-passwords (Optional)
 
 * 4 create an alias to call the code in the terminal
 in my .zshrc:
