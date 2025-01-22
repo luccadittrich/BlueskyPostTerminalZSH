@@ -14,6 +14,8 @@ use zsh or similar
 in my .zshrc:
 
    alias bluesky='/home/harrypotter/Projects/sh/blu.sh'
+   
+   ps: change folders to your username and folder name
 
 * 5 call the alias in the terminal using "" to your message.
 example:
