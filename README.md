@@ -1,23 +1,17 @@
-# BlueskyPostTerminalZSH
+# 📡 BlueskyPostTerminalZSH
 
-STEPS to post in bluesky directly from your Linux terminal
+Post directly to [Bluesky](https://bsky.app) from your Linux terminal using `zsh` (or similar).
 
-use zsh or similar
+## ⚙️ Setup Steps
 
-* 1 Copy code to any folder in your computer
+1. **Copy the script** (`blu.sh`) to any folder on your system.
 
-* 2 Change APP_PASSWORD and HANDLE
+2. **Edit the script** and replace the following:
+   - `APP_PASSWORD` – your [App Password](https://staging.bsky.app/settings/app-passwords)
+   - `HANDLE` – your Bluesky handle (e.g., `yourname.bsky.social`)
 
-* 3 Get an app password from here: https://staging.bsky.app/settings/app-passwords (Optional)
+3. **(Optional)** If you don't have an App Password yet, generate one [here](https://staging.bsky.app/settings/app-passwords).
 
-* 4 create an alias to call the code in the terminal
-in my .zshrc:
-
-   alias bluesky='/home/harrypotter/Projects/sh/blu.sh'
-   
-   ps: change folders to your username and folder name
-
-* 5 call the alias in the terminal using "" to your message.
-example:
-
-  $ bluesky "your message goes here"
+4. **Add an alias** to your terminal config (`~/.zshrc` or similar):
+   ```zsh
+   alias bluesky='/home/yourusername/path/to/blu.sh'
